@@ -161,7 +161,10 @@
   .section-desc {
     font-size: 13px;
     color: var(--text-secondary);
-    max-width: 700px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-bottom: 32px;
     margin-top: -20px;
     margin-left: 51px;
@@ -481,7 +484,7 @@
 
 <!-- COVER -->
 <div class="cover">
-  <div class="cover-label">Research Analysis — May 2026</div>
+  <div class="cover-label">Research Analysis, May 2026</div>
   <h1>What <span>Publicis</span><br>Now Controls</h1>
   <p class="cover-sub">Publicis has spent over $6 billion assembling three overlapping identity systems. Here is what each one does, where they conflict, and what the rest of the market should be thinking about.</p>
   <div class="cover-meta">
@@ -496,7 +499,7 @@
 <!-- SECTION 1: GENERAL COMPARISON -->
 <div class="section-wrap">
   <div class="section-header">
-    <span class="section-number">01 —</span>
+    <span class="section-number">01</span>
     <h2 class="section-title">General Profile Comparison</h2>
   </div>
   <p class="section-desc">Three acquisitions. Three different companies built for three different buyers. The table below puts them side by side as of May 2026.</p>
@@ -513,21 +516,21 @@
     <tbody>
       <tr>
         <td>Acquired by Publicis</td>
-        <td class="cell-epsilon">2019 — $4.4B</td>
-        <td class="cell-liveramp">2026 — $2.2B</td>
-        <td class="cell-lotame">2025 — undisclosed</td>
+        <td class="cell-epsilon">2019: $4.4B</td>
+        <td class="cell-liveramp">2026: $2.2B</td>
+        <td class="cell-lotame">2025, price undisclosed</td>
       </tr>
       <tr>
         <td>Core product</td>
-        <td class="cell-epsilon">PeopleCloud platform — identity, CRM, loyalty, email, retail media, clean room, measurement</td>
-        <td class="cell-liveramp">Data collaboration platform — RampID, clean room (Habu), data onboarding, marketplace</td>
-        <td class="cell-lotame">DMP + data marketplace — Panorama ID, audience enrichment, global data exchange</td>
+        <td class="cell-epsilon">PeopleCloud platform covering identity, CRM, loyalty, email, retail media, clean room, and measurement</td>
+        <td class="cell-liveramp">Data collaboration platform. Core products: RampID, Habu clean room, data onboarding, marketplace</td>
+        <td class="cell-lotame">DMP and data marketplace. Core products: Panorama ID, audience enrichment, global data exchange</td>
       </tr>
       <tr>
         <td>Identity product</td>
-        <td class="cell-epsilon">CORE ID — offline-anchored, deterministic, PII-validated. 200M+ privacy-protected US consumer IDs (Epsilon product page)</td>
-        <td class="cell-liveramp">RampID — pseudonymized, open-web, cross-cloud. Interoperable across 25,000+ publisher domains</td>
-        <td class="cell-lotame">Panorama ID — probabilistic + deterministic, cookieless-native. 1.6B IDs across 109 countries</td>
+        <td class="cell-epsilon">CORE ID: offline-anchored, deterministic, PII-validated. 200M+ privacy-protected US consumer IDs (Epsilon product page)</td>
+        <td class="cell-liveramp">RampID: pseudonymized, open-web, cross-cloud. Interoperable across 25,000+ publisher domains</td>
+        <td class="cell-lotame">Panorama ID: probabilistic and deterministic, cookieless-native. 1.6B IDs across 109 countries</td>
       </tr>
       <tr>
         <td>Primary customer</td>
@@ -545,13 +548,13 @@
         <td>Geographic strength</td>
         <td class="cell-epsilon">Predominantly US (97% of revenue at acquisition)</td>
         <td class="cell-liveramp">Predominantly US (94% of ~$800M annual revenue); 14 markets</td>
-        <td class="cell-lotame">Genuinely global — 109 countries; strongest international footprint of the three</td>
+        <td class="cell-lotame">Genuinely global. 109 countries. Strongest international footprint of the three</td>
       </tr>
       <tr>
         <td>Services depth</td>
-        <td class="cell-epsilon">High — integrated into Publicis agency model; managed services heritage</td>
-        <td class="cell-liveramp">Low historically — tech-first, consultative sales but not a services business</td>
-        <td class="cell-lotame">Moderate — marketplace support and account management; not full-service</td>
+        <td class="cell-epsilon">High. Integrated into the Publicis agency model with a managed services heritage</td>
+        <td class="cell-liveramp">Low historically. Tech-first, consultative sales model, not a services business</td>
+        <td class="cell-lotame">Moderate. Marketplace support and account management, but not full-service</td>
       </tr>
       <tr>
         <td>Annual revenue</td>
@@ -567,7 +570,7 @@
 <!-- SECTION 2: IDENTITY RESOLUTION -->
 <div class="section-wrap">
   <div class="section-header">
-    <span class="section-number">02 —</span>
+    <span class="section-number">02</span>
     <h2 class="section-title">Identity Resolution Method</h2>
   </div>
   <p class="section-desc">All three resolve identity. They do it differently, for different environments, with different anchor signals. That is the detail most coverage misses.</p>
@@ -584,50 +587,50 @@
     <tbody>
       <tr>
         <td>Anchor signal</td>
-        <td class="cell-epsilon">Offline PII — name and postal address required; validated against transaction data</td>
-        <td class="cell-liveramp">Pseudonymized identifier — derived from hashed email or authenticated signal, then tokenized</td>
-        <td class="cell-lotame">Multi-input — deterministic (customer IDs, email) + probabilistic (behavioral, public web data)</td>
+        <td class="cell-epsilon">Offline PII: name and postal address required, validated against transaction data</td>
+        <td class="cell-liveramp">Pseudonymized identifier derived from hashed email or authenticated signal, then tokenized</td>
+        <td class="cell-lotame">Multi-input: deterministic (customer IDs, email) plus probabilistic (behavioral, public web data)</td>
       </tr>
       <tr>
         <td>Resolution type</td>
-        <td class="cell-epsilon">Deterministic spine — anchored to verified name and address; Epsilon markets it as "100% deterministic" but uses AI and probabilistic modeling to fill data gaps and extend reach. The anchor is deterministic; the extension layer is not.</td>
-        <td class="cell-liveramp">Pseudonymized deterministic — real-person match, privacy-safe transport layer</td>
-        <td class="cell-lotame">Primarily probabilistic in practice — uses deterministic inputs (customer IDs, hashed email) as a foundation but extends reach via probabilistic graphing without requiring user authentication. Lotame has explicitly noted this makes it different from login-dependent deterministic solutions.</td>
+        <td class="cell-epsilon">Deterministic spine anchored to verified name and address. Epsilon markets it as &ldquo;100% deterministic&rdquo; but uses AI and probabilistic modeling to fill data gaps and extend reach. The anchor is deterministic. The extension layer is not.</td>
+        <td class="cell-liveramp">Pseudonymized deterministic: real-person match with a privacy-safe transport layer</td>
+        <td class="cell-lotame">Primarily probabilistic in practice. Uses deterministic inputs (customer IDs, hashed email) as a foundation but extends reach via probabilistic graphing without requiring user authentication. Lotame has explicitly noted this makes it different from login-dependent deterministic solutions.</td>
       </tr>
       <tr>
         <td>Cookie dependency</td>
-        <td class="cell-epsilon">None — built on offline identity, not cookie-based</td>
-        <td class="cell-liveramp">None — designed for post-cookie, uses authenticated traffic and hashed email</td>
-        <td class="cell-lotame">None — explicitly cookieless-native; built specifically for the post-cookie open web</td>
+        <td class="cell-epsilon">None. Built on offline identity, not cookie-based</td>
+        <td class="cell-liveramp">None. Designed for post-cookie environments using authenticated traffic and hashed email</td>
+        <td class="cell-lotame">None. Explicitly cookieless-native, built specifically for the post-cookie open web</td>
       </tr>
       <tr>
         <td>Operating environment</td>
-        <td class="cell-epsilon">CRM, loyalty programs, email, CTV, on/offline integration — strongest in closed-loop brand environments</td>
-        <td class="cell-liveramp">Open web, publisher ecosystem, clean rooms, multi-cloud — strongest in data collaboration workflows</td>
-        <td class="cell-lotame">Open web, mobile, CTV, global publisher network — strongest in cookieless and international contexts</td>
+        <td class="cell-epsilon">CRM, loyalty programs, email, CTV, on/offline integration. Strongest in closed-loop brand environments</td>
+        <td class="cell-liveramp">Open web, publisher ecosystem, clean rooms, multi-cloud. Strongest in data collaboration workflows</td>
+        <td class="cell-lotame">Open web, mobile, CTV, global publisher network. Strongest in cookieless and international contexts</td>
       </tr>
       <tr>
         <td>Behavioral attributes per ID</td>
         <td class="cell-epsilon">Deep transaction and intent signals from Abacus co-op and Conversant</td>
-        <td class="cell-liveramp">Identity transport, not enrichment — RampID connects data, it does not natively carry attributes</td>
-        <td class="cell-lotame">200+ behavioral attributes per Panorama ID — among the richest signal sets of the three</td>
+        <td class="cell-liveramp">Identity transport, not enrichment. RampID connects data but does not natively carry attributes</td>
+        <td class="cell-lotame">200+ behavioral attributes per Panorama ID. Among the richest signal sets of the three</td>
       </tr>
       <tr>
         <td>ID scale (claimed)</td>
         <td class="cell-epsilon">200M+ US consumer IDs (Epsilon product page); 2.3B global profiles (Publicis figure, includes Epsilon + Lotame combined)</td>
-        <td class="cell-liveramp">Not separately disclosed — operates across 25,000+ publisher domains</td>
+        <td class="cell-liveramp">Not separately disclosed. Operates across 25,000+ publisher domains</td>
         <td class="cell-lotame">1.6B IDs across 109 countries</td>
       </tr>
       <tr>
         <td>Unique strength</td>
         <td class="cell-epsilon">Most accurate for offline-to-online resolution; transaction-validated <span class="tag tag-strength">DETERMINISTIC</span></td>
-        <td class="cell-liveramp">Most interoperable — works across all major clouds and 1,000+ partner ecosystem <span class="tag tag-strength">NEUTRAL INFRA</span></td>
+        <td class="cell-liveramp">Most interoperable: works across all major clouds and a 1,000+ partner ecosystem <span class="tag tag-strength">NEUTRAL INFRA</span></td>
         <td class="cell-lotame">Most globally scaled cookieless ID; richest behavioral signal per ID <span class="tag tag-strength">GLOBAL / OPEN WEB</span></td>
       </tr>
       <tr>
         <td>Inherent limitation</td>
         <td class="cell-epsilon">US-centric; requires offline PII anchor limits open-web reach <span class="tag tag-risk">GEOGRAPHIC</span></td>
-        <td class="cell-liveramp">Does not own the data — RampID is infrastructure, not an enrichment layer <span class="tag tag-risk">DATA DEPTH</span></td>
+        <td class="cell-liveramp">Does not own the data. RampID is infrastructure, not an enrichment layer <span class="tag tag-risk">DATA DEPTH</span></td>
         <td class="cell-lotame">Probabilistic components introduce uncertainty; smaller US enterprise footprint <span class="tag tag-risk">ACCURACY AT EDGES</span></td>
       </tr>
     </tbody>
@@ -638,8 +641,8 @@
 <!-- SECTION 3: PRIMARY CUSTOMER / CONFLICT -->
 <div class="section-wrap">
   <div class="section-header">
-    <span class="section-number">03 —</span>
-    <h2 class="section-title">Who Each One Was Built For — and Where That Creates Problems</h2>
+    <span class="section-number">03</span>
+    <h2 class="section-title">Who Each One Was Built For, and Where That Creates Problems</h2>
   </div>
   <p class="section-desc">Each of these companies was built for a specific buyer. Epsilon served brands. LiveRamp served everyone, including Publicis competitors. That history matters now.</p>
 
@@ -667,21 +670,21 @@
       </tr>
       <tr>
         <td>Role in ecosystem</td>
-        <td class="cell-epsilon">Buy-side data layer — powers brand targeting and measurement</td>
-        <td class="cell-liveramp">Neutral infrastructure — historically served both buy-side and sell-side equally</td>
+        <td class="cell-epsilon">Buy-side data layer that powers brand targeting and measurement</td>
+        <td class="cell-liveramp">Neutral infrastructure. Historically served both buy-side and sell-side equally</td>
         <td class="cell-lotame">Sell-side heritage (DMP) transitioning to buy-side; serves publishers and advertisers</td>
       </tr>
       <tr>
         <td>Post-acquisition conflict</td>
-        <td class="cell-epsilon">Lower — Epsilon was already woven into Publicis agency model; existing clients expected this</td>
-        <td class="cell-liveramp">High — publishers and competing holding companies (WPP, Omnicom, IPG) depend on LiveRamp infrastructure; neutrality now structurally compromised <span class="tag tag-risk">HIGH RISK</span></td>
-        <td class="cell-lotame">Moderate — Lotame still serves 4,000 non-Publicis clients; brand independence unclear over time <span class="tag tag-risk">MEDIUM RISK</span></td>
+        <td class="cell-epsilon">Lower. Epsilon was already woven into the Publicis agency model and existing clients expected it</td>
+        <td class="cell-liveramp">High. Publishers and competing holding companies (WPP, Omnicom, IPG) depend on LiveRamp infrastructure. Neutrality is now structurally in question <span class="tag tag-risk">HIGH RISK</span></td>
+        <td class="cell-lotame">Moderate. Lotame still serves 4,000 non-Publicis clients and brand independence is unclear over time <span class="tag tag-risk">MEDIUM RISK</span></td>
       </tr>
       <tr>
         <td>Competing HoldCo exposure</td>
-        <td class="cell-epsilon">Minimal — Epsilon always Publicis-only</td>
-        <td class="cell-liveramp">High — all major holding companies (WPP, Omnicom, IPG, Dentsu) are LiveRamp clients; holdcos represent ~5% of LiveRamp revenue directly</td>
-        <td class="cell-lotame">Low-moderate — Lotame's client base is mostly non-holdco publishers and direct brands</td>
+        <td class="cell-epsilon">Minimal. Epsilon was always Publicis-only</td>
+        <td class="cell-liveramp">High. All major holding companies (WPP, Omnicom, IPG, Dentsu) are LiveRamp clients. Holdcos represent roughly 5% of LiveRamp revenue directly</td>
+        <td class="cell-lotame">Low to moderate. Lotame's client base is mostly non-holdco publishers and direct brands</td>
       </tr>
       <tr>
         <td>Publicis commitment</td>
@@ -702,7 +705,7 @@
 <!-- SECTION 4: CLEAN ROOM COMPARISON -->
 <div class="section-wrap">
   <div class="section-header">
-    <span class="section-number">04 —</span>
+    <span class="section-number">04</span>
     <h2 class="section-title">Clean Room Capability Comparison</h2>
   </div>
   <p class="section-desc">This is where the redundancy is most obvious. All three have clean room products. They are not at the same level of maturity, and they are not solving the same problem.</p>
@@ -719,26 +722,26 @@
     <tbody>
       <tr>
         <td>Product origin</td>
-        <td class="cell-epsilon">Native — built within PeopleCloud platform</td>
-        <td class="cell-liveramp">Acquired — Habu purchased January 2024 for ~$200M; integrated into LiveRamp platform</td>
-        <td class="cell-lotame">Limited — clean room functionality is less developed; Lotame's strength is marketplace, not collaboration infrastructure</td>
+        <td class="cell-epsilon">Native: built within the PeopleCloud platform</td>
+        <td class="cell-liveramp">Acquired: Habu purchased January 2024 for approximately $200M and integrated into the LiveRamp platform</td>
+        <td class="cell-lotame">Limited. Lotame's clean room functionality is less developed. Its strength is the marketplace, not collaboration infrastructure</td>
       </tr>
       <tr>
         <td>IDC MarketScape 2025</td>
-        <td class="cell-epsilon">Leader — cited for "most robust third-party data sets and pre-configured integrations" <span class="tag tag-strength">LEADER</span></td>
-        <td class="cell-liveramp">Leader — cited for extensive partner network, interoperability, native activation <span class="tag tag-strength">LEADER</span></td>
+        <td class="cell-epsilon">Leader, cited for &ldquo;most robust third-party data sets and pre-configured integrations&rdquo; <span class="tag tag-strength">LEADER</span></td>
+        <td class="cell-liveramp">Leader, cited for extensive partner network, interoperability, and native activation <span class="tag tag-strength">LEADER</span></td>
         <td class="cell-lotame">Not assessed in 2025 IDC clean room MarketScape</td>
       </tr>
       <tr>
         <td>Multi-cloud support</td>
-        <td class="cell-epsilon">Partial — PeopleCloud has cloud integrations but not zero-copy multi-cloud architecture</td>
-        <td class="cell-liveramp">Full — AWS, Azure, GCP, Databricks, Snowflake; zero-copy architecture; no data movement required <span class="tag tag-strength">STRONGEST</span></td>
-        <td class="cell-lotame">Limited — not a cloud-native clean room product</td>
+        <td class="cell-epsilon">Partial. PeopleCloud has cloud integrations but not zero-copy multi-cloud architecture</td>
+        <td class="cell-liveramp">Full: AWS, Azure, GCP, Databricks, Snowflake. Zero-copy architecture. No data movement required <span class="tag tag-strength">STRONGEST</span></td>
+        <td class="cell-lotame">Limited. Not a cloud-native clean room product</td>
       </tr>
       <tr>
         <td>Identity integration</td>
-        <td class="cell-epsilon">Native CORE ID integration — comes pre-loaded with 3P data attached to real people; fastest time-to-value within Epsilon ecosystem</td>
-        <td class="cell-liveramp">RampID native; also supports alternative identifiers including hashed email — flexible for non-RampID users</td>
+        <td class="cell-epsilon">Native CORE ID integration. Comes pre-loaded with third-party data attached to real people. Fastest time-to-value within the Epsilon ecosystem</td>
+        <td class="cell-liveramp">RampID native but also supports alternative identifiers including hashed email, making it flexible for non-RampID users</td>
         <td class="cell-lotame">Panorama ID-linked but not a full clean room infrastructure product</td>
       </tr>
       <tr>
@@ -751,7 +754,7 @@
         <td>Primary use cases</td>
         <td class="cell-epsilon">Audience creation, cross-channel attribution, CTV measurement, brand-to-retail matching</td>
         <td class="cell-liveramp">Cross-partner overlap analysis, media measurement, retail media attribution, second-party data deals, AI model training <span class="tag tag-overlap">BROADEST USE CASES</span></td>
-        <td class="cell-lotame">Audience enrichment, cookieless targeting — not primarily a clean room use case</td>
+        <td class="cell-lotame">Audience enrichment and cookieless targeting. Not primarily a clean room use case</td>
       </tr>
       <tr>
         <td>Notable clients / examples</td>
@@ -762,8 +765,8 @@
       <tr>
         <td>Redundancy risk</td>
         <td class="cell-epsilon">Overlaps with LiveRamp on clean room; Epsilon's version is more data-rich but less technically interoperable <span class="tag tag-risk">OVERLAP</span></td>
-        <td class="cell-liveramp">Market leader; least redundant inside the stack — this is what Publicis didn't have before <span class="tag tag-unique">UNIQUE ADD</span></td>
-        <td class="cell-lotame">Minimal clean room overlap — Lotame adds data and ID, not clean room infra <span class="tag tag-unique">DIFFERENT ROLE</span></td>
+        <td class="cell-liveramp">Market leader and least redundant inside the stack. This is what Publicis did not have before <span class="tag tag-unique">UNIQUE ADD</span></td>
+        <td class="cell-lotame">Minimal clean room overlap. Lotame adds data and ID, not clean room infrastructure <span class="tag tag-unique">DIFFERENT ROLE</span></td>
       </tr>
     </tbody>
   </table>
@@ -773,7 +776,7 @@
 <!-- SECTION 5: STACK MAP -->
 <div class="section-wrap">
   <div class="section-header">
-    <span class="section-number">05 —</span>
+    <span class="section-number">05</span>
     <h2 class="section-title">The Publicis Stack Map</h2>
   </div>
   <p class="section-desc">Publicis frames this as a deliberate architecture, not a collection of acquisitions. Each layer has a job. Here is how they stack.</p>
@@ -782,14 +785,14 @@
     <div class="stack-layer" style="background:#f0ebff;">
       <div class="stack-layer-label" style="background:#2d1a5c; color:#c8b4f0;">LAYER 5<br>AGENTIC</div>
       <div class="stack-layer-content">
-        <div class="stack-layer-title" style="color:#2d1a5c;">Marcel — Agentic Platform</div>
-        <div class="stack-layer-desc">The output layer. Marcel activates co-created data across client enterprise functions. It sits on top of everything else and is the piece clients actually interact with. Not an acquisition — built internally by Publicis.</div>
+        <div class="stack-layer-title" style="color:#2d1a5c;">Marcel: Agentic Platform</div>
+        <div class="stack-layer-desc">The output layer. Marcel activates co-created data across client enterprise functions. It sits on top of everything else and is the piece clients actually interact with. Not an acquisition. Built internally by Publicis.</div>
       </div>
     </div>
     <div class="stack-layer" style="background:#fef8f0;">
       <div class="stack-layer-label" style="background:#8b2e2e; color:white;">LAYER 4<br>COLLABORATION</div>
       <div class="stack-layer-content">
-        <div class="stack-layer-title" style="color:#8b2e2e;">LiveRamp — Data Co-Creation &amp; Clean Room</div>
+        <div class="stack-layer-title" style="color:#8b2e2e;">LiveRamp: Data Co-Creation &amp; Clean Room</div>
         <div class="stack-layer-desc">The collaboration layer. RampID connects 25,000+ publisher domains and 500+ tech partners. Habu handles the clean room. This is the piece Publicis did not have before May 2026. It is also the acquisition that changes the competitive dynamics most for the rest of the market.</div>
         <div style="margin-top:6px;"><span class="pill pill-liveramp">LiveRamp</span> <span class="tag tag-unique">UNIQUE ADD</span></div>
       </div>
@@ -797,7 +800,7 @@
     <div class="stack-layer" style="background:#f0f4f8;">
       <div class="stack-layer-label" style="background:#1a3a5c; color:white;">LAYER 3<br>IDENTITY</div>
       <div class="stack-layer-content">
-        <div class="stack-layer-title" style="color:#1a3a5c;">Epsilon — People-Based Identity &amp; CRM Activation</div>
+        <div class="stack-layer-title" style="color:#1a3a5c;">Epsilon: People-Based Identity &amp; CRM Activation</div>
         <div class="stack-layer-desc">The identity spine. CORE ID anchors to verified name and address, validated against transaction data. PeopleCloud covers the full marketing lifecycle: loyalty, email, CTV, retail media, measurement. Publicis calls this the source of truth layer. That is accurate.</div>
         <div style="margin-top:6px;"><span class="pill pill-epsilon">Epsilon</span> <span class="tag tag-strength">FOUNDATION LAYER</span></div>
       </div>
@@ -805,7 +808,7 @@
     <div class="stack-layer" style="background:#f0f7f2;">
       <div class="stack-layer-label" style="background:#2d5a3d; color:white;">LAYER 2<br>GLOBAL REACH</div>
       <div class="stack-layer-content">
-        <div class="stack-layer-title" style="color:#2d5a3d;">Lotame — Global Cookieless Scale &amp; Data Marketplace</div>
+        <div class="stack-layer-title" style="color:#2d5a3d;">Lotame: Global Cookieless Scale &amp; Data Marketplace</div>
         <div class="stack-layer-desc">The international and open-web layer. Panorama ID adds 1.6B cookieless IDs across 109 countries. The data marketplace covers 100+ sources and 5,000+ audience segments globally. This acquisition gets less attention than LiveRamp. It should get more. Epsilon alone could not solve for the world outside the US.</div>
         <div style="margin-top:6px;"><span class="pill pill-lotame">Lotame</span> <span class="tag tag-unique">GEOGRAPHIC EXPANSION</span></div>
       </div>
@@ -813,14 +816,14 @@
     <div class="stack-layer" style="background:#f5f2ed;">
       <div class="stack-layer-label" style="background:#555; color:white;">LAYER 1<br>ENGINEERING</div>
       <div class="stack-layer-content">
-        <div class="stack-layer-title" style="color:#555;">Publicis Sapient — Infrastructure &amp; AI Readiness</div>
+        <div class="stack-layer-title" style="color:#555;">Publicis Sapient: Infrastructure &amp; AI Readiness</div>
         <div class="stack-layer-desc">The foundation. Sapient goes in first to modernize client infrastructure before any of the identity or data layers activate. Also the organizational home for LiveRamp post-acquisition, which is itself a signal about how Publicis views this: as a technology business, not just a data one.</div>
       </div>
     </div>
   </div>
 
   <div class="callout">
-    <div class="callout-label">Publicis CEO Arthur Sadoun — Analyst Call, May 18, 2026</div>
+    <div class="callout-label">Publicis CEO Arthur Sadoun, Analyst Call, May 18, 2026</div>
     <p>"Sapient goes in first. Epsilon connects infrastructure to real people. LiveRamp adds the collaboration layer. Marcel sits on top, activating all of it across the client's business." The pitch is coherent. Whether clients can actually run the full stack in practice is the execution question nobody has answered yet.</p>
   </div>
 </div>
@@ -829,7 +832,7 @@
 <!-- SECTION 6: COMPETITIVE RISK MATRIX -->
 <div class="section-wrap">
   <div class="section-header">
-    <span class="section-number">06 —</span>
+    <span class="section-number">06</span>
     <h2 class="section-title">Competitive Risk by Stakeholder</h2>
   </div>
   <p class="section-desc">Not everyone in the market carries the same exposure here. The risk depends on who you are and how deeply you rely on infrastructure Publicis now owns.</p>
@@ -848,52 +851,52 @@
       <tbody>
         <tr>
           <td>Brands using Publicis agencies</td>
-          <td class="risk-cell-low">Low — full stack access; proprietary data advantage is the value proposition</td>
-          <td class="risk-cell-low">Low — data is theirs; Publicis contractually cannot use it beyond permitted scope</td>
-          <td class="risk-cell-medium">Medium — bundled stack may reduce ability to negotiate individual components</td>
-          <td class="risk-cell-medium">Medium — Publicis both buys media and measures it; conflict exists but has existed since Epsilon</td>
+          <td class="risk-cell-low">Low. Full stack access. Proprietary data advantage is the value proposition</td>
+          <td class="risk-cell-low">Low. Data is theirs. Publicis contractually cannot use it beyond permitted scope</td>
+          <td class="risk-cell-medium">Medium. Bundled stack may reduce ability to negotiate individual components</td>
+          <td class="risk-cell-medium">Medium. Publicis both buys media and measures it. That conflict has existed since the Epsilon acquisition</td>
         </tr>
         <tr>
           <td>Brands NOT using Publicis agencies</td>
-          <td class="risk-cell-medium">Medium — LiveRamp and Lotame remain open; but Publicis now controls infrastructure those brands rely on</td>
-          <td class="risk-cell-high">High — if LiveRamp's neutrality erodes over time, alternative identity infrastructure is limited</td>
-          <td class="risk-cell-medium">Medium — no immediate pricing change pledged; longer-term leverage unclear</td>
-          <td class="risk-cell-low">Low — can still use independent measurement providers</td>
+          <td class="risk-cell-medium">Medium. LiveRamp and Lotame remain open, but Publicis now controls infrastructure those brands rely on</td>
+          <td class="risk-cell-high">High. If LiveRamp's neutrality erodes over time, alternative identity infrastructure is limited</td>
+          <td class="risk-cell-medium">Medium. No immediate pricing change pledged. Longer-term leverage is unclear</td>
+          <td class="risk-cell-low">Low. Can still use independent measurement providers</td>
         </tr>
         <tr>
           <td>Independent publishers</td>
-          <td class="risk-cell-high">High — LiveRamp was the neutral onboarding and identity layer for the open web; that neutrality is now structurally in question</td>
-          <td class="risk-cell-high">High — publishers who monetize through non-Publicis demand may not want their data passing through Publicis-owned infrastructure</td>
-          <td class="risk-cell-medium">Medium — LiveRamp's 25,000 publisher relationships give Publicis significant leverage over time</td>
-          <td class="risk-cell-high">High — Publicis controls identity AND buys media against publisher inventory; clear conflict</td>
+          <td class="risk-cell-high">High. LiveRamp was the neutral onboarding and identity layer for the open web. That neutrality is now structurally in question</td>
+          <td class="risk-cell-high">High. Publishers who monetize through non-Publicis demand may not want their data passing through Publicis-owned infrastructure</td>
+          <td class="risk-cell-medium">Medium. LiveRamp's 25,000 publisher relationships give Publicis significant leverage over time</td>
+          <td class="risk-cell-high">High. Publicis controls identity and buys media against publisher inventory. Clear conflict</td>
         </tr>
         <tr>
           <td>Competing holding companies (WPP, Omnicom, IPG, Dentsu)</td>
-          <td class="risk-cell-high">High — all are LiveRamp clients; their onboarding and identity workflows now run through a competitor's infrastructure</td>
-          <td class="risk-cell-high">High — contractual protections exist today; strategic exposure is long-term</td>
-          <td class="risk-cell-medium">Medium — switching costs for identity infrastructure are significant; migration is not simple</td>
-          <td class="risk-cell-high">High — measurement data that flows through LiveRamp is now accessible (contractually limited, but proximity to a competitor)</td>
+          <td class="risk-cell-high">High. All are LiveRamp clients. Their onboarding and identity workflows now run through a competitor's infrastructure</td>
+          <td class="risk-cell-high">High. Contractual protections exist today. Strategic exposure is long-term</td>
+          <td class="risk-cell-medium">Medium. Switching costs for identity infrastructure are significant and migration is not simple</td>
+          <td class="risk-cell-high">High. Measurement data flowing through LiveRamp is now adjacent to a competitor (contractually limited, but the proximity is real)</td>
         </tr>
         <tr>
           <td>Adtech vendors / DSPs / SSPs</td>
-          <td class="risk-cell-medium">Medium — LiveRamp integrations are how most DSPs access RampID; Publicis now owns that connectivity</td>
-          <td class="risk-cell-medium">Medium — LiveRamp has pledged open interoperability; watch for future partner program changes</td>
-          <td class="risk-cell-high">High — Publicis could, over time, favor Epsilon's Conversant DSP over independent DSPs within the stack</td>
-          <td class="risk-cell-low">Low — adtech vendors are not primarily measurement consumers</td>
+          <td class="risk-cell-medium">Medium. LiveRamp integrations are how most DSPs access RampID. Publicis now owns that connectivity</td>
+          <td class="risk-cell-medium">Medium. LiveRamp has pledged open interoperability. Watch for future partner program changes</td>
+          <td class="risk-cell-high">High. Publicis could, over time, favor Epsilon's Conversant DSP over independent DSPs within the stack</td>
+          <td class="risk-cell-low">Low. Adtech vendors are not primarily measurement consumers</td>
         </tr>
         <tr>
           <td>Retail media networks</td>
-          <td class="risk-cell-low">Low — LiveRamp is deeply embedded in retail media; existing RMN relationships should continue</td>
-          <td class="risk-cell-medium">Medium — RMNs who also have relationships with competing agencies may reconsider LiveRamp as their collaboration layer</td>
-          <td class="risk-cell-medium">Medium — Publicis's Citrus Ad retail media stack now has LiveRamp's RMN relationships adjacent to it</td>
-          <td class="risk-cell-medium">Medium — LiveRamp powers attribution for many RMNs; Publicis proximity creates perception issues</td>
+          <td class="risk-cell-low">Low. LiveRamp is deeply embedded in retail media and existing RMN relationships should continue</td>
+          <td class="risk-cell-medium">Medium. RMNs that also have relationships with competing agencies may reconsider LiveRamp as their collaboration layer</td>
+          <td class="risk-cell-medium">Medium. Publicis's Citrus Ad retail media stack now sits adjacent to LiveRamp's RMN relationships</td>
+          <td class="risk-cell-medium">Medium. LiveRamp powers attribution for many RMNs. Publicis proximity creates perception issues even if the data is protected</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <div class="callout">
-    <div class="callout-label">MediaPost — May 18, 2026</div>
+    <div class="callout-label">MediaPost, May 18, 2026</div>
     <p>"The neutral infrastructure layer that publishers, brands, and competing agencies relied on has been absorbed into one of the three largest holding companies on earth. The neutral middle is gone at the infrastructure level." That is the cleanest summary of what changed this week.</p>
   </div>
 </div>
@@ -902,7 +905,7 @@
 <!-- SECTION 7: DATA MARKETPLACE / 3PD COMPARISON -->
 <div class="section-wrap">
   <div class="section-header">
-    <span class="section-number">07 —</span>
+    <span class="section-number">07</span>
     <h2 class="section-title">Third-Party Data Marketplace Comparison</h2>
   </div>
   <p class="section-desc">All three run data marketplaces. The overlap in segment categories is real. The differences in data ownership, geography, and signal type are what actually matter for how Publicis manages this going forward.</p>
@@ -913,46 +916,46 @@
         <h3>Epsilon</h3>
         <p>PROPRIETARY FIRST-PARTY DATA + CURATED 3P</p>
       </div>
-      <div class="marketplace-item">Transaction-validated consumer data from Abacus co-op — mail order, retail purchase history</div>
+      <div class="marketplace-item">Transaction-validated consumer data from the Abacus co-op: mail order and retail purchase history</div>
       <div class="marketplace-item">Ethically sourced from public records, surveys, professional partners, product registration</div>
       <div class="marketplace-item">Data categories: auto, CPG, financial services, retail, travel, insurance, media/entertainment, telecom</div>
       <div class="marketplace-item">200M+ US consumer IDs (Epsilon product page); data not available for EEA residents under GDPR</div>
-      <div class="marketplace-item">Clean room comes pre-loaded with 3P data attached to real people — fastest time-to-value</div>
+      <div class="marketplace-item">Clean room comes pre-loaded with third-party data attached to real people. Fastest time-to-value of the three</div>
       <div class="marketplace-item">IAB Tech Lab Standard and Neutronian Data Quality Certifications</div>
-      <div class="marketplace-item">Transactional signal strength is a core differentiator — purchase history, not modeled intent</div>
+      <div class="marketplace-item">Transactional signal strength is the core differentiator: purchase history, not modeled intent</div>
     </div>
     <div class="marketplace-col">
       <div class="marketplace-col-header liveramp-header">
         <h3>LiveRamp</h3>
-        <p>OPEN MARKETPLACE — 160+ THIRD-PARTY SELLERS</p>
+        <p>OPEN MARKETPLACE: 160+ THIRD-PARTY SELLERS</p>
       </div>
       <div class="marketplace-item">160+ third-party data sellers; 500,000+ individual segments available</div>
       <div class="marketplace-item">Segment types: behavioral, geographic, demographic, purchase, B2B, contextual, CTV viewership</div>
       <div class="marketplace-item">Data sellers include: LexisNexis, Experian, Oracle (historic), Acxiom, and hundreds of specialist providers</div>
-      <div class="marketplace-item">Marketplace revenue: $35M in Q1 FY26 (9% YoY growth) — fastest-growing segment</div>
-      <div class="marketplace-item">AI-powered search launched Oct 2025 — natural language segment discovery</div>
-      <div class="marketplace-item">AI model training / data licensing launched Jan 2026 — new use case for marketplace data</div>
+      <div class="marketplace-item">Marketplace revenue: $35M in Q1 FY26 (9% YoY growth). Fastest-growing segment in the business</div>
+      <div class="marketplace-item">AI-powered search launched Oct 2025, enabling natural language segment discovery</div>
+      <div class="marketplace-item">AI model training and data licensing launched Jan 2026. New use case for marketplace data</div>
       <div class="marketplace-item">Expanding into: Netflix (10 global markets), Meta attribution for RMNs, Uber Intelligence</div>
-      <div class="marketplace-item">Marketplace is a neutral platform — LiveRamp does not own the underlying data segments</div>
+      <div class="marketplace-item">Marketplace is a neutral platform. LiveRamp does not own the underlying data segments</div>
     </div>
     <div class="marketplace-col">
       <div class="marketplace-col-header lotame-header">
         <h3>Lotame</h3>
-        <p>GLOBAL DATA EXCHANGE — 109 COUNTRIES</p>
+        <p>GLOBAL DATA EXCHANGE: 109 COUNTRIES</p>
       </div>
-      <div class="marketplace-item">One of the world's largest second- and third-party data exchanges — billions of monthly unique user signals</div>
+      <div class="marketplace-item">One of the world's largest second- and third-party data exchanges, with billions of monthly unique user signals</div>
       <div class="marketplace-item">5,000+ ready-to-target audience segments; custom segments built on demand</div>
       <div class="marketplace-item">Data categories: demographics, B2B, purchase data (4,500+ global retailers), TV viewership, behavioral, contextual</div>
-      <div class="marketplace-item">Global reach: strongest in LATAM, APAC, EMEA — markets where Epsilon and LiveRamp are limited</div>
-      <div class="marketplace-item">Each Panorama ID carries 200+ behavioral attributes — richest signal per ID of the three</div>
+      <div class="marketplace-item">Global reach. Strongest in LATAM, APAC, and EMEA, which are the markets where Epsilon and LiveRamp are limited</div>
+      <div class="marketplace-item">Each Panorama ID carries 200+ behavioral attributes. Richest signal per ID of the three</div>
       <div class="marketplace-item">Available in 40+ DSPs/SSPs including Google DV360, The Trade Desk, Xandr, Amazon APS</div>
-      <div class="marketplace-item">Curated Marketplaces product — private marketplace alternative with cookieless audiences and brand-safe supply</div>
-      <div class="marketplace-item">Second most adopted cookieless ID in world — 65,000+ publisher deployments</div>
+      <div class="marketplace-item">Curated Marketplaces product: a private marketplace alternative with cookieless audiences and brand-safe supply</div>
+      <div class="marketplace-item">Second most adopted cookieless ID in the world, with 65,000+ publisher deployments</div>
     </div>
   </div>
 
   <div class="overlap-strip">
-    <h4>Where All Three Overlap — The Redundancy List</h4>
+    <h4>Where All Three Overlap: The Redundancy List</h4>
     <div class="overlap-items">
       <span class="overlap-chip">Demographic segments</span>
       <span class="overlap-chip">Behavioral targeting</span>
@@ -977,21 +980,21 @@
     <tbody>
       <tr>
         <td>Data ownership model</td>
-        <td class="cell-epsilon">Owns its core data (Abacus, transaction co-op, proprietary graph) — not just a marketplace host</td>
-        <td class="cell-liveramp">Platform / connector — does not own the data sold through the marketplace; is the distribution infrastructure</td>
+        <td class="cell-epsilon">Owns its core data (Abacus, transaction co-op, proprietary graph). Not just a marketplace host</td>
+        <td class="cell-liveramp">Platform and connector. Does not own the data sold through the marketplace. It is the distribution infrastructure</td>
         <td class="cell-lotame">Owns some proprietary data (Panorama ID behavioral graph); also hosts third-party seller data</td>
       </tr>
       <tr>
         <td>Geographic coverage</td>
         <td class="cell-epsilon">US-only for 3P data (GDPR restricts EEA use) <span class="tag tag-risk">US ONLY</span></td>
-        <td class="cell-liveramp">Global — sellers span 14 markets; segments are geo-tagged; strongest in US/Europe <span class="tag tag-overlap">PARTIAL GLOBAL</span></td>
-        <td class="cell-lotame">109 countries — genuinely global; strongest international 3P marketplace of the three <span class="tag tag-unique">GLOBAL LEADER</span></td>
+        <td class="cell-liveramp">Global. Sellers span 14 markets with geo-tagged segments. Strongest in the US and Europe <span class="tag tag-overlap">PARTIAL GLOBAL</span></td>
+        <td class="cell-lotame">109 countries. Genuinely global and the strongest international third-party marketplace of the three <span class="tag tag-unique">GLOBAL LEADER</span></td>
       </tr>
       <tr>
         <td>Data signal type</td>
-        <td class="cell-epsilon">Transaction-led — known purchase behavior; high accuracy, lower probabilistic risk <span class="tag tag-strength">TRANSACTIONAL</span></td>
-        <td class="cell-liveramp">Mixed — platform aggregates behavioral, demographic, purchase, B2B from 160+ sellers</td>
-        <td class="cell-lotame">Behavioral-led — web, mobile, CTV signals; 200+ attributes per ID; probabilistic extension</td>
+        <td class="cell-epsilon">Transaction-led: known purchase behavior with high accuracy and lower probabilistic risk <span class="tag tag-strength">TRANSACTIONAL</span></td>
+        <td class="cell-liveramp">Mixed. Platform aggregates behavioral, demographic, purchase, and B2B data from 160+ sellers</td>
+        <td class="cell-lotame">Behavioral-led: web, mobile, CTV signals with 200+ attributes per ID and probabilistic extension</td>
       </tr>
       <tr>
         <td>Key differentiator</td>
@@ -1013,8 +1016,7 @@
 <!-- FOOTNOTE -->
 <div class="footnote">
   <strong>Sources</strong><br>
-  Acquisition data: Publicis Groupe press releases (2019, 2025, 2026); MediaPost, Digiday, Campaign reporting (May 18, 2026). Identity capabilities: Epsilon IDC MarketScape CTV (June 2025), Epsilon IDC Clean Room (August 2025), LiveRamp IDC Clean Room (May 2025), LiveRamp 8-K filings, Publicis acquisition press release. Data marketplace: LiveRamp product documentation, Lotame product pages, Epsilon Adobe Audience Finder, AdExchanger (April 2019, December 2024). The $6.6B+ figure covers only Epsilon ($4.4B) and LiveRamp ($2.2B); Lotame's price was never disclosed. The 25,000 publisher figure comes from the Publicis press release, May 18, 2026. Risk matrix ratings are analytical judgments based on the cited source material, not sourced assessments.<br><br>
-  <strong>Corrections made during fact-check:</strong> CORE ID scale corrected from 300M+ to 200M+ per Epsilon's own product page; the higher figure came from a third-party review site and is not supported by primary sources. Epsilon's 97% US revenue figure is from AdExchanger's 2019 acquisition coverage and reflects the company at time of purchase, not today. CORE ID resolution type clarified: Epsilon markets it as "100% deterministic" but uses probabilistic modeling to fill gaps and extend reach; the anchor is deterministic, the extension layer is not. Lotame Panorama ID clarified as primarily probabilistic in practice, using deterministic inputs as a base but extending reach without requiring user authentication.
+  Acquisition data: Publicis Groupe press releases (2019, 2025, 2026); MediaPost, Digiday, Campaign reporting (May 18, 2026). Identity capabilities: Epsilon IDC MarketScape CTV (June 2025), Epsilon IDC Clean Room (August 2025), LiveRamp IDC Clean Room (May 2025), LiveRamp 8-K filings, Publicis acquisition press release. Data marketplace: LiveRamp product documentation, Lotame product pages, Epsilon Adobe Audience Finder, AdExchanger (April 2019, December 2024). The $6.6B+ figure covers only Epsilon ($4.4B) and LiveRamp ($2.2B); Lotame's price was never disclosed. The 25,000 publisher figure comes from the Publicis press release, May 18, 2026. Risk matrix ratings are analytical judgments based on the cited source material, not sourced assessments.
 </div>
 
 </body>
